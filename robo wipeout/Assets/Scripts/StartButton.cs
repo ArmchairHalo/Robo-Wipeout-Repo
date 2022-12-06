@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Startbutton : MonoBehaviour
+public class StartButton : MonoBehaviour
 {
     public void ChangeScene(string scenechange)
     {
-
+        SceneManager.LoadScene(scenechange);
     }
    
 }
