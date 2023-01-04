@@ -801,7 +801,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 1046532439}
+  cam: {fileID: 1623307957}
   speed: 6
+  turnSmoothTime: 0.1
 --- !u!143 &1046532439
 CharacterController:
   m_ObjectHideFlags: 0
