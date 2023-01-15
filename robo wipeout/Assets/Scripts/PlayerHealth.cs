@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public string gameOverScene;
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
         Debug.Log("Collision!");
@@ -21,5 +23,7 @@ public class PlayerHealth : MonoBehaviour
     {
 
         Destroy(gameObject);
+
+        SceneManager.LoadScene(gameOverScene);
     }
 }
